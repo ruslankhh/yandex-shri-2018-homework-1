@@ -76,11 +76,11 @@
     position: absolute;
 
     &--actions {
-      background-image: url('/assets/images/actions.png');
+      background-image: url('../images/actions.png');
     }
 
     &--heart {
-      background-image: url('/assets/images/heart.png');
+      background-image: url('../images/heart.png');
     }
   }
 
