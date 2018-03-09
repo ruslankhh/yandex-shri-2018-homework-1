@@ -1,0 +1,29 @@
+{
+  "map": true,
+  "parser": "postcss-scss",
+  "plugins": {
+    "postcss-import": {
+      "path": "./app"
+    },
+    "postcss-mixins": {},
+    "postcss-simple-vars": {},
+    "postcss-nested": {},
+    "postcss-svg": {
+      "paths": [
+        "./app/static/images"
+      ]
+    },
+    "postcss-assets": {
+      "basePath": "./app/static",
+      "loadPaths": [
+        "./app/static"
+      ],
+      "cachebuster": true,
+      "cache": true
+    },
+    "precss": {},
+    "autoprefixer": {
+      "cascade": true
+    }
+  }
+}
