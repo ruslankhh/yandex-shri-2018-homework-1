@@ -1,0 +1,247 @@
+.FeedItem {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: max-content auto;
+    grid-gap: 0;
+    position: relative;
+    height: 100%;
+    color: #000;
+    text-decoration: none;
+  }
+
+  &__header {
+    font-weight: bold;
+    grid-column: span 3;
+  }
+
+  &__titleContainer {
+    position: relative;
+    background-color: #fff;
+    max-height: 4.10526316em;
+    padding-bottom: 0.7rem;
+    width: 100%;
+    z-index: 1;
+  }
+
+  &__title {
+    max-height: 3.63157895em;
+    overflow: hidden;
+  }
+
+  &__body {
+    grid-column: span 3;
+    padding-bottom: 0.8rem;
+    position: relative;
+  }
+
+  &__image {
+    display: block;
+    max-width: 100%;
+  }
+
+  &__footer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    font-size: 1.4rem;
+    line-height: 2rem;
+    grid-column: span 3;
+    position: relative;
+  }
+
+  &__descriptionContainer {
+    grid-column: span 10;
+    overflow: hidden;
+  }
+
+  &__channelName {
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 30px;
+  }
+
+  &__control {
+    &--footer {
+      grid-column: span 2;
+    }
+  }
+
+  &__controlItem {
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    padding: 5px;
+    position: absolute;
+
+    &--actions {
+      background-image: url('/assets/images/actions.png');
+    }
+
+    &--heart {
+      background-image: url('/assets/images/heart.png');
+    }
+  }
+
+  &--size-s {
+    grid-column: span 4;
+
+    .FeedItem__header {
+      font-size: 1.7rem;
+      line-height: 1.17647059em;
+      max-height: 2.76470588em;
+    }
+
+    .FeedItem__body {
+      padding-bottom: 0;
+    }
+
+    .FeedItem__controlItem--actions {
+      bottom: -30px;
+      right: 0;
+    }
+
+    .FeedItem__controlItem--heart {
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  &--size-m {
+    grid-column: span 6;
+
+    .FeedItem__header {
+      font-size: 1.9rem;
+      line-height: 1.21052632em;
+      max-height: 2.89473684em;
+    }
+
+    .FeedItem__control--header,
+    .FeedItem__control--body {
+      display: none;
+    }
+
+    .FeedItem__footer {
+      grid-auto-rows: 4.42857143em;
+    }
+
+    .FeedItem__controlItem--actions {
+      top: 0;
+      right: 0;
+    }
+
+    .FeedItem__controlItem--heart {
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  &--size-l {
+    grid-column: span 12;
+
+    .FeedItem__container {
+      grid-gap: 1.6rem;
+      grid-row-gap: 0;
+    }
+
+    .FeedItem__header {
+      font-size: 1.9rem;
+      grid-column: 3 / 4;
+      grid-row: span 1;
+      overflow: hidden;
+      line-height: 1.21052632em;
+      max-height: 2.78947368em;
+    }
+
+    .FeedItem__body {
+      grid-column: 1 / 3;
+      grid-row: 1 / 3;
+      padding-bottom: 0;
+    }
+
+    .FeedItem__footer {
+      grid-column: 3 / 4;
+      grid-row: 2 / 3;
+      padding-bottom: 0;
+    }
+
+    .FeedItem__control--header,
+    .FeedItem__control--body {
+      display: none;
+    }
+
+    .FeedItem__descriptionContainer {
+      max-height: 11.4285714em;
+      grid-column: span 12;
+    }
+
+    .FeedItem__control--footer {
+      grid-column: span 12;
+    }
+
+    .FeedItem__control {
+      height: 30px;
+    }
+
+    .FeedItem__controlItem--actions {
+      bottom: 0;
+      left: 0;
+    }
+
+    .FeedItem__controlItem--heart {
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  &--type-tid {
+    .FeedItem__channelName {
+      display: none;
+    }
+  }
+
+  &--type-ti {
+    .FeedItem__footer {
+      display: none;
+    }
+
+    .FeedItem__channelName {
+      display: none;
+    }
+  }
+
+  &--type-td {
+    .FeedItem__header {
+      max-height: 4.05882353em;
+    }
+
+    .FeedItem__footer {
+      grid-template-rows: auto 30px;
+    }
+
+    .FeedItem__descriptionContainer {
+      max-height: 8.71428571em;
+      grid-column: span 12;
+    }
+
+    .FeedItem__channelName {
+      grid-column: span 8;
+    }
+
+    .FeedItem__control {
+      grid-column: span 4;
+      height: 30px;
+    }
+
+    .FeedItem__controlItem--actions {
+      right: 30px;
+      bottom: 0;
+    }
+
+    .FeedItem__control--header,
+    .FeedItem__body {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.header {
+  &__container {
+    padding-top: 43px;
+    padding-bottom: 43px;
+  }
+
+  &__logo {
+    width: 91px;
+    height: 29px;
+  }
+}

@@ -1,0 +1,30 @@
+<define-mixin name="FeedItem" mods mix class title image description channelName>
+  <div block="FeedItem" mods="{{ mods }}" mix="{{ mix }}" class="{{ class }}">
+    <a elem="container" href="#">
+      <div elem="header">
+        <div elem="titleContainer">
+          <div elem="title">{{ title }}</div>
+          <div elem="control" mods="header">
+            <div elem="controlItem" mods="actions"></div>
+          </div>
+        </div>
+      </div>
+      <div elem="body">
+        <img elem="image" src="{{ image }}"></img>
+        <div elem="control" mods="body">
+          <div elem="controlItem" mods="heart"></div>
+        </div>
+      </div>
+      <div elem="footer">
+        <div elem="descriptionContainer">
+          <div elem="description">{{ description }}</div>
+        </div>
+        <div elem="channelName">{{ channelName }}</div>
+        <div elem="control" mods="footer">
+          <div elem="controlItem" mods="actions"></div>
+          <div elem="controlItem" mods="heart"></div>
+        </div>
+      </div>
+    </a>
+  </div>
+</define-mixin>

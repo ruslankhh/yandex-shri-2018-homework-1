@@ -1,12 +1,9 @@
 :root {
-  overflow-x: hidden;
-}
-
-body {
   font-family: $font-family;
+  font-size: 10px;
+  overflow-x: hidden;
 
-  &,
-  > * {
+  & > * {
     box-sizing: border-box;
   }
 }

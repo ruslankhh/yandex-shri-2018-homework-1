@@ -5,6 +5,7 @@
   padding-right: $container-padding-x;
   padding-top: $container-padding-top;
   width: 100%;
+  max-width: $content-md-width;
 
   &__row {
     width: 100%;
@@ -25,14 +26,6 @@
     -webkit-font-smoothing: antialiased;
   }
 
-  &--width-md {
-    max-width: $content-md-width;
-  }
-
-  &--width-lg {
-    max-width: $content-lg-width;
-  }
-
   &--center {
     margin-left: auto;
     margin-right: auto;
@@ -48,12 +41,15 @@
 }
 
 .grid {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-left: -$grid-padding-x;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 1.6rem;
+  grid-row-gap: 3.2rem;
+
+  /* margin-left: -$grid-padding-x;
   margin-right: -$grid-padding-x;
-  width: calc(100% + 2 * $grid-padding-x);
+  width: calc(100% + 2 * $grid-padding-x); */
 
   &__item {
     padding-bottom: $grid-padding-bottom;
