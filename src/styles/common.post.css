@@ -7,3 +7,23 @@
     box-sizing: border-box;
   }
 }
+
+body {
+  position: relative;
+
+  &::after {
+    display: none;
+    content: "";
+    background-image: url('../tests/page-1-zen-30-.png');
+    background-repeat: no-repeat;
+    background-size: 1024px auto;
+    background-position: center -73px;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+  }
+}

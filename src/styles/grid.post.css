@@ -1,5 +1,4 @@
 .container {
-  background-color: $container-bg-color;
   padding-bottom: $container-padding-bottom;
   padding-left: $container-padding-x;
   padding-right: $container-padding-x;
@@ -45,7 +44,7 @@
   grid-template-columns: repeat(12, 1fr);
   grid-auto-rows: auto;
   grid-gap: 1.6rem;
-  grid-row-gap: 3.2rem;
+  grid-row-gap: 2.9rem; /* 3.2rem; */
 
   /* margin-left: -$grid-padding-x;
   margin-right: -$grid-padding-x;

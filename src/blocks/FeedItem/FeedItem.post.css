@@ -16,10 +16,10 @@
   }
 
   &__titleContainer {
-    position: relative;
     background-color: #fff;
     max-height: 4.10526316em;
-    padding-bottom: 0.7rem;
+    padding-bottom: 0.9rem;
+    position: relative;
     width: 100%;
     z-index: 1;
   }
@@ -57,7 +57,6 @@
   &__channelName {
     font-size: 1.4rem;
     font-weight: bold;
-    line-height: 30px;
   }
 
   &__control {
@@ -86,11 +85,16 @@
 
   &--size-s {
     grid-column: span 4;
+    padding-bottom: 1.1rem;
 
     .FeedItem__header {
       font-size: 1.7rem;
       line-height: 1.17647059em;
-      max-height: 2.76470588em;
+      max-height: calc(2.35294118em + 1.2rem);
+    }
+
+    .FeedItem__titleContainer {
+      padding-bottom: 1.2rem;
     }
 
     .FeedItem__body {
@@ -99,22 +103,27 @@
 
     .FeedItem__controlItem--actions {
       bottom: -30px;
-      right: 0;
+      right: 6px;
     }
 
     .FeedItem__controlItem--heart {
-      bottom: 0;
-      right: 0;
+      bottom: 7px;
+      right: 6px;
     }
   }
 
   &--size-m {
     grid-column: span 6;
+    padding-top: 0.3rem;
 
     .FeedItem__header {
       font-size: 1.9rem;
       line-height: 1.21052632em;
-      max-height: 2.89473684em;
+      max-height: calc(2.42105263em + 0.9rem);
+    }
+
+    .FeedItem__titleContainer {
+      padding-bottom: 0.9rem;
     }
 
     .FeedItem__control--header,
@@ -127,18 +136,20 @@
     }
 
     .FeedItem__controlItem--actions {
-      top: 0;
-      right: 0;
+      top: -4px;
+      right: -1px;
     }
 
     .FeedItem__controlItem--heart {
-      bottom: 0;
-      right: 0;
+      bottom: -6px;
+      right: -1px;
     }
   }
 
   &--size-l {
     grid-column: span 12;
+    padding-top: 0;
+    padding-bottom: 0;
 
     .FeedItem__container {
       grid-gap: 1.6rem;
@@ -151,7 +162,15 @@
       grid-row: span 1;
       overflow: hidden;
       line-height: 1.21052632em;
-      max-height: 2.78947368em;
+      max-height: calc(2.42105263em + 1rem);
+    }
+
+    .FeedItem__titleContainer {
+      padding-bottom: 1rem;
+    }
+
+    .FeedItem__title {
+      max-height: 2.42105263em;
     }
 
     .FeedItem__body {
@@ -181,17 +200,17 @@
     }
 
     .FeedItem__control {
-      height: 30px;
+      height: 27px;
     }
 
     .FeedItem__controlItem--actions {
-      bottom: 0;
-      left: 0;
+      bottom: -2px;
+      left: -1px;
     }
 
     .FeedItem__controlItem--heart {
-      bottom: 0;
-      right: 0;
+      bottom: -4px;
+      right: 2px;
     }
   }
 
@@ -235,8 +254,8 @@
     }
 
     .FeedItem__controlItem--actions {
-      right: 30px;
-      bottom: 0;
+      bottom: 7px;
+      right: 45px;
     }
 
     .FeedItem__control--header,
