@@ -1,7 +1,5 @@
 /* Common */
 $bg-color: #fff;
-$shadow-color: #e9ecef;
-$shadow-width: 1px;
 $outline: none;
 
 /* Images */
@@ -16,30 +14,6 @@ $image-edit-url: "../images/edit.svg";
 /* Fonts */
 $font-family: "YS Text", sans-serif;
 
-/* Fix */
-$fix-padding-top: 0; /* 4px; */
-$fix-padding-bottom: 0; /* 3px; */
-
-/* Header */
-$header-bg-color: $bg-color;
-$header-height: calc(71px + $fix-padding-top);
-$header-padding-top: calc(18px + $fix-padding-top);
-$header-padding-left: 24px;
-$header-padding-right: 24px;
-$header-padding-bottom: 17px;
-$header-shadow-color: $shadow-color;
-$header-shadow-width: $shadow-width;
-
-/* Footer */
-$footer-bg-color: $bg-color;
-$footer-height: calc(76px + $fix-padding-bottom);
-$footer-padding-top: 20px;
-$footer-padding-left: 20px;
-$footer-padding-right: 20px;
-$footer-padding-bottom: calc(20px + $fix-padding-bottom);
-$footer-shadow-color: $shadow-color;
-$footer-shadow-width: $shadow-width;
-
 /* Grid */
 $content-lg-width: 1000px;
 $content-md-width: 704px;
@@ -49,13 +23,4 @@ $container-padding-top: 0; /* 10px; */
 $container-padding-bottom: 14px;
 $container-lg-width: calc($content-lg-width + 2 * $container-padding-x);
 $container-md-width: calc($content-md-width + 2 * $container-padding-x);
-$container-bg-color: $bg-color;
-$container-bg-color-light: #e9ecef;
-$container-bg-color-lighter: rgba(73, 76, 83, 0.02);
-$container-title-color: #c7c7c7;
-
-$grid-padding-top: 0; /* 10px; */
-$grid-padding-bottom: 0; /* 4px; */
-$grid-padding-x: 16px;
-$grid-padding-offset-x: 40px;
 
