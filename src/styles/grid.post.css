@@ -20,11 +20,16 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-auto-rows: auto;
-  grid-gap: 0;
+  grid-column-gap: 0;
   grid-row-gap: 2.9rem;
 
+  @media (min-width: 361px) {
+    grid-column-gap: 1.6rem;
+    grid-auto-flow: dense;
+  }
+
   @media (min-width: 576px) {
-    grid-gap: 1.6rem;
-    grid-row-gap: 2.9rem;
+    grid-column-gap: 1.6rem;
+    grid-auto-flow: initial;
   }
 }
