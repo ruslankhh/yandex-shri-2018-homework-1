@@ -3,11 +3,9 @@
 @import 'normalize.css';
 
 @import './variables.post.css';
-@import './mixins.post.css';
 
 @import './common.post.css';
 @import './grid.post.css';
-
 @import './header.post.css';
 @import './main.post.css';
 

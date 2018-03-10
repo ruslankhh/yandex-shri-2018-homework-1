@@ -1,26 +1,32 @@
 /* Common */
 $bg-color: #fff;
-$outline: none;
-
-/* Images */
-$image-arrow-left-url: "../images/arrow-left.svg";
-$image-arrow-right-url: "../images/arrow-right.svg";
-$image-arrow-down-url: "../images/arrow-down.svg";
-$image-arrow-up-url: "../images/arrow-up.svg";
-$image-close-url: "../images/close.svg";
-$image-close-white-url: "../images/close-white.svg";
-$image-edit-url: "../images/edit.svg";
 
 /* Fonts */
 $font-family: "YS Text", sans-serif;
+$font-size-xs-root: 12px;
+$font-size-md-root: 10px;
+$font-size-xl-root: 14px;
 
 /* Grid */
-$content-lg-width: 1000px;
-$content-md-width: 704px;
+$content-width-md: 70.4rem;
+$content-width-xl: 83.3rem;
 
-$container-padding-x: 12px;
+$container-padding-x: 1.2rem;
 $container-padding-top: 0; /* 10px; */
-$container-padding-bottom: 14px;
-$container-lg-width: calc($content-lg-width + 2 * $container-padding-x);
-$container-md-width: calc($content-md-width + 2 * $container-padding-x);
+$container-padding-bottom: 1.4rem;
 
+$container-width-xxs: 100%;
+$container-width-md: calc($content-width-md + 2 * $container-padding-x);
+$container-width-xl: calc($content-width-xl + 2 * $container-padding-x);
+
+/* Images */
+$image-actions-url: "../images/actions.png";
+$image-heart-url: "../images/heart.png";
+$image-test-0-url: "../tests/page-1-zen-30-.png";
+
+/* Media */
+$media-breakpoint-up-xs: 361px;
+$media-breakpoint-up-sm: 576px;
+$media-breakpoint-up-md: 728px;
+$media-breakpoint-up-lg: 992px; /* Not used */
+$media-breakpoint-up-xl: 1200px;

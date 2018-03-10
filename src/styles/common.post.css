@@ -1,7 +1,15 @@
 :root {
   font-family: $font-family;
-  font-size: 10px;
+  font-size: $font-size-xs-root;
   overflow-x: hidden;
+
+  @media (min-width: $media-breakpoint-up-md) {
+    font-size: $font-size-md-root;
+  }
+
+  @media (min-width: $media-breakpoint-up-xl) {
+    font-size: $font-size-xl-root;
+  }
 }
 
 body {
@@ -10,7 +18,7 @@ body {
   &::after {
     display: none;
     content: "";
-    background-image: url('../tests/page-1-zen-30-.png');
+    background-image: url($image-test-0-url);
     background-repeat: no-repeat;
     background-size: 1024px auto;
     background-position: center -73px;

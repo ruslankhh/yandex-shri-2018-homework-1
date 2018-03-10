@@ -1,13 +1,18 @@
 .container {
+  box-sizing: border-box;
   padding-bottom: $container-padding-bottom;
   padding-left: $container-padding-x;
   padding-right: $container-padding-x;
   padding-top: $container-padding-top;
   position: relative;
-  max-width: 100%;
+  max-width: $container-width-xxs;
 
-  @media (min-width: 576px) {
-    max-width: $content-md-width;
+  @media (min-width: $media-breakpoint-up-md) {
+    max-width: $container-width-md;
+  }
+
+  @media (min-width: $media-breakpoint-up-xl) {
+    max-width: $container-width-xl;
   }
 
   &--center {
@@ -23,12 +28,12 @@
   grid-column-gap: 0;
   grid-row-gap: 2.9rem;
 
-  @media (min-width: 361px) {
+  @media (min-width: $media-breakpoint-up-xs) {
     grid-column-gap: 1.6rem;
     grid-auto-flow: dense;
   }
 
-  @media (min-width: 576px) {
+  @media (min-width: $media-breakpoint-up-md) {
     grid-column-gap: 1.6rem;
     grid-auto-flow: initial;
   }
