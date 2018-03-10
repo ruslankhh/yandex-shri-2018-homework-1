@@ -11,6 +11,10 @@
     max-width: $container-width-md;
   }
 
+  @media (min-width: $media-breakpoint-up-lg) {
+    max-width: $container-width-lg;
+  }
+
   @media (min-width: $media-breakpoint-up-xl) {
     max-width: $container-width-xl;
   }

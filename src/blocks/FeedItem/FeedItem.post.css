@@ -39,7 +39,31 @@
     position: relative;
   }
 
+  &__imageContainer {
+    &::after {
+      display: block;
+      content: "";
+      background-color: #fff;
+      opacity: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      position: absolute;
+      height: 100%;
+      transition: opacity 0.1s ease-out;
+    }
+  }
+
+  @media screen {
+    &:hover {
+      .FeedItem__imageContainer::after {
+        opacity: 0.4;
+      }
+    }
+  }
+
   &__image {
+    position: relative;
     display: block;
     width: 100%;
   }

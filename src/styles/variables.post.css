@@ -9,6 +9,7 @@ $font-size-xl-root: 14px;
 
 /* Grid */
 $content-width-md: 70.4rem;
+$content-width-lg: 96.6rem;
 $content-width-xl: 83.3rem;
 
 $container-padding-x: 1.2rem;
@@ -17,6 +18,7 @@ $container-padding-bottom: 1.4rem;
 
 $container-width-xxs: 100%;
 $container-width-md: calc($content-width-md + 2 * $container-padding-x);
+$container-width-lg: calc($content-width-lg + 2 * $container-padding-x);
 $container-width-xl: calc($content-width-xl + 2 * $container-padding-x);
 
 /* Images */
@@ -28,5 +30,5 @@ $image-test-0-url: "../tests/page-1-zen-30-.png";
 $media-breakpoint-up-xs: 361px;
 $media-breakpoint-up-sm: 576px;
 $media-breakpoint-up-md: 728px;
-$media-breakpoint-up-lg: 992px; /* Not used */
-$media-breakpoint-up-xl: 1200px;
+$media-breakpoint-up-lg: 992px;
+$media-breakpoint-up-xl: 1281px;
