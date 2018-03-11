@@ -31,7 +31,7 @@ function replaceExpressions(tree, attrs, content) {
 					}
 				});
 			}
-			if (node.tag === 'content') {
+			if (node.tag === 'mixin-content') {
 				node = {
 					tag: false,
 					content: content || node.content || [],
