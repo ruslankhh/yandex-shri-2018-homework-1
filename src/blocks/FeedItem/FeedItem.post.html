@@ -1,4 +1,4 @@
-<define-mixin name="FeedItem" mods mix class title image description channelName>
+<define-mixin name="FeedItem" mods mix class title src srcset description channelName>
   <div block="FeedItem" mods="{{ mods }}" mix="{{ mix }}" class="{{ class }}">
     <a elem="container" href="#">
       <div elem="header">
@@ -11,7 +11,7 @@
       </div>
       <div elem="body">
         <div elem="imageContainer">
-          <img elem="image" src="{{ image }}"></img>
+          <img elem="image" src="{{ src }}" srcset="{{ srcset }}"></img>
         </div>
         <div elem="control" mods="body">
           <div elem="controlItem" mods="heart"></div>
