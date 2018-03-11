@@ -1,34 +1,36 @@
-<define-mixin name="FeedItem" mods mix class title src srcset description channelName>
-  <div block="FeedItem" mods="{{ mods }}" mix="{{ mix }}" class="{{ class }}">
-    <a elem="container" href="#">
-      <div elem="header">
-        <div elem="titleContainer">
-          <div elem="title">{{ title }}</div>
-          <div elem="control" mods="header">
-            <div elem="controlItem" mods="actions"></div>
-          </div>
-        </div>
-      </div>
-      <div elem="body">
-        <div elem="imageContainer">
-          <img elem="image" src="{{ src }}" srcset="{{ srcset }}"></img>
-        </div>
-        <div elem="control" mods="body">
-          <div elem="controlItem" mods="heart"></div>
-        </div>
-      </div>
-      <div elem="footer">
-        <div elem="descriptionContainer">
-          <div elem="description">
-            <div elem="descriptionText">{{ description }}</div>
-          </div>
-        </div>
-        <div elem="channelName">{{ channelName }}</div>
-        <div elem="control" mods="footer">
-          <div elem="controlItem" mods="actions"></div>
-          <div elem="controlItem" mods="heart"></div>
-        </div>
-      </div>
-    </a>
-  </div>
+<define-mixin name="FeedItem">
+	<template id="FeedItem">
+		<div block="FeedItem">
+			<a elem="container" href="#">
+				<div elem="header">
+					<div elem="titleContainer">
+						<div elem="title"></div>
+						<div elem="control" mods="header">
+							<div elem="controlItem" mods="actions"></div>
+						</div>
+					</div>
+				</div>
+				<div elem="body">
+					<div elem="imageContainer">
+						<img elem="image" src="" srcset=""></img>
+					</div>
+					<div elem="control" mods="body">
+						<div elem="controlItem" mods="heart"></div>
+					</div>
+				</div>
+				<div elem="footer">
+					<div elem="descriptionContainer">
+						<div elem="description">
+							<div elem="descriptionText"></div>
+						</div>
+					</div>
+					<div elem="channelName"></div>
+					<div elem="control" mods="footer">
+						<div elem="controlItem" mods="actions"></div>
+						<div elem="controlItem" mods="heart"></div>
+					</div>
+				</div>
+			</a>
+		</div>
+	</template>
 </define-mixin>
